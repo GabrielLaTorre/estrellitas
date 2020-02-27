@@ -53,7 +53,9 @@ if (input == password) {
   } 
   else if (operacion == "division"){
     var resultado_division = division();
-    alert(resultado_division);
+    if(resultado_division != undefined) {
+      alert(resultado_division);  
+    }
   }
   else {
     alert("Operacion no disponible");
