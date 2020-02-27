@@ -26,8 +26,18 @@ function perimetro() {
   return resultado;
 }
 
+function division() {
+  var valor1 = parseInt(prompt("Ingrese el primer valor #1"));
+  var valor2 = parseInt(prompt("Ingrese el segundo valor #2"));
+  if (valor1, valor2 == 0) {
+    alert("Operación inválida");
+  }
+  else {var resultado = valor1 / valor2}
+  return resultado;
+}
+
 if (input == password) {
-  alert("Operaciones disponibles: SUMA | PROMEDIO | PERIMETRO");
+  alert("Operaciones disponibles: SUMA | PROMEDIO | PERIMETRO | DIVISION");
 
   var operacion = prompt("Que operacion desea realizar");
 
@@ -40,7 +50,12 @@ if (input == password) {
   } else if (operacion == "perimetro") {
     var resultado_perimetro = perimetro();
     alert(resultado_perimetro);
-  } else {
+  } 
+  else if (operacion == "division"){
+    var resultado_division = division();
+    alert(resultado_division);
+  }
+  else {
     alert("Operacion no disponible");
   }
 } else {
