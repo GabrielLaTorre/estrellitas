@@ -40,9 +40,20 @@ function division() {
   else {var resultado = valor1 / valor2}
   return resultado;
 }
+function pseudocodigo () {
+  var valor1 = parseInt(prompt("Ingrese el primer valor"))
+  var valor2 = parseInt(prompt("Ingrese el segundo valor"))
+  if (Number.isInteger(valor1, valor2) ) {
+    resultado = valor1 + valor2;
+  }
+  else {
+    throw "Ingrese números enteros" 
+  }
+  return resultado; 
+}
 
 if (input == password) {
-  alert("Operaciones disponibles: SUMA | PROMEDIO | PERIMETRO | DIVISION | RADIO");
+  alert("Operaciones disponibles: SUMA | PROMEDIO | PERIMETRO | DIVISION | RADIO | PSEUDOCÓDIGO");
 
   var operacion = prompt("Que operacion desea realizar");
 
@@ -64,6 +75,12 @@ if (input == password) {
     if(resultado_division != undefined) {
       alert(resultado_division);  
     }
+  }
+  else if (operacion == "pseudocodigo") {
+    do {
+      pseudocodigo();
+      alert(resultado);
+    } while (resultado < 100);   
   }
   else {
     alert("Operacion no disponible");
