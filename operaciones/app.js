@@ -15,14 +15,19 @@ function promedio() {
   var valor4 = parseInt(prompt("Ingrese el segundo valor #4"));
   var valor5 = parseInt(prompt("Ingrese el primer valor #5"));
   var resultado = (valor1 + valor2 + valor3 + valor4 + valor5) / 5;
-
   return resultado;
 }
 
 function perimetro() {
   var diametro = parseInt(prompt("Ingrese el diametro"));
   var resultado = diametro * Math.PI;
+  return resultado;
+}
 
+function radio (){
+  const pi = Math.PI;
+  var perimetro = parseInt(prompt("Ingrese el perimetro"));
+  var resultado = perimetro / (2*pi);
   return resultado;
 }
 
@@ -37,7 +42,7 @@ function division() {
 }
 
 if (input == password) {
-  alert("Operaciones disponibles: SUMA | PROMEDIO | PERIMETRO | DIVISION");
+  alert("Operaciones disponibles: SUMA | PROMEDIO | PERIMETRO | DIVISION | RADIO");
 
   var operacion = prompt("Que operacion desea realizar");
 
@@ -50,7 +55,10 @@ if (input == password) {
   } else if (operacion == "perimetro") {
     var resultado_perimetro = perimetro();
     alert(resultado_perimetro);
-  } 
+  } else if ( operacion == "radio") {
+    var resultado_radio = radio();
+    alert(resultado_radio);
+  }
   else if (operacion == "division"){
     var resultado_division = division();
     if(resultado_division != undefined) {
